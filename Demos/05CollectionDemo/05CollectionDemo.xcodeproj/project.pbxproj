@@ -63,6 +63,7 @@
 		195734E92198256800AF719A /* IMG_3275.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 195734B72198256800AF719A /* IMG_3275.JPG */; };
 		195734EA2198256800AF719A /* IMG_0193.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 195734B82198256800AF719A /* IMG_0193.JPG */; };
 		195734EB2198256800AF719A /* IMG_0151.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 195734B92198256800AF719A /* IMG_0151.JPG */; };
+		196DDBB221A29731009E86DD /* FCFMasonryViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196DDBB121A29731009E86DD /* FCFMasonryViewLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,6 +125,7 @@
 		195734B72198256800AF719A /* IMG_3275.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_3275.JPG; sourceTree = "<group>"; };
 		195734B82198256800AF719A /* IMG_0193.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0193.JPG; sourceTree = "<group>"; };
 		195734B92198256800AF719A /* IMG_0151.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0151.JPG; sourceTree = "<group>"; };
+		196DDBB121A29731009E86DD /* FCFMasonryViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCFMasonryViewLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 				1957341C2198043000AF719A /* RootController.swift */,
 				1957341E21980C0F00AF719A /* MKPhotoCollectionCell.swift */,
 				1957341F21980C0F00AF719A /* MKPhotoCollectionCell.xib */,
+				196DDBB121A29731009E86DD /* FCFMasonryViewLayout.swift */,
 			);
 			path = 05CollectionDemo;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 			files = (
 				1957340B219803DF00AF719A /* AppDelegate.swift in Sources */,
 				1957342021980C0F00AF719A /* MKPhotoCollectionCell.swift in Sources */,
+				196DDBB221A29731009E86DD /* FCFMasonryViewLayout.swift in Sources */,
 				1957341D2198043000AF719A /* RootController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
