@@ -64,6 +64,11 @@
 		195734EA2198256800AF719A /* IMG_0193.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 195734B82198256800AF719A /* IMG_0193.JPG */; };
 		195734EB2198256800AF719A /* IMG_0151.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 195734B92198256800AF719A /* IMG_0151.JPG */; };
 		196DDBB221A29731009E86DD /* FCFMasonryViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196DDBB121A29731009E86DD /* FCFMasonryViewLayout.swift */; };
+		19A5103721A50AE9003FA8FB /* FCFCoverFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A5103621A50AE9003FA8FB /* FCFCoverFlowLayout.swift */; };
+		19A5103A21A51184003FA8FB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A5103921A51184003FA8FB /* QuartzCore.framework */; };
+		19A5103C21A51197003FA8FB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A5103B21A51197003FA8FB /* AVFoundation.framework */; };
+		19A5103E21A5119F003FA8FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A5103D21A5119F003FA8FB /* UIKit.framework */; };
+		19A5104021A511B1003FA8FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A5103F21A511B1003FA8FB /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -126,6 +131,11 @@
 		195734B82198256800AF719A /* IMG_0193.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0193.JPG; sourceTree = "<group>"; };
 		195734B92198256800AF719A /* IMG_0151.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0151.JPG; sourceTree = "<group>"; };
 		196DDBB121A29731009E86DD /* FCFMasonryViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCFMasonryViewLayout.swift; sourceTree = "<group>"; };
+		19A5103621A50AE9003FA8FB /* FCFCoverFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCFCoverFlowLayout.swift; sourceTree = "<group>"; };
+		19A5103921A51184003FA8FB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		19A5103B21A51197003FA8FB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		19A5103D21A5119F003FA8FB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		19A5103F21A511B1003FA8FB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +143,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19A5104021A511B1003FA8FB /* CoreGraphics.framework in Frameworks */,
+				19A5103E21A5119F003FA8FB /* UIKit.framework in Frameworks */,
+				19A5103C21A51197003FA8FB /* AVFoundation.framework in Frameworks */,
+				19A5103A21A51184003FA8FB /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +158,7 @@
 			children = (
 				19573409219803DF00AF719A /* 05CollectionDemo */,
 				19573408219803DF00AF719A /* Products */,
+				19A5103821A51184003FA8FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,6 +182,7 @@
 				1957341E21980C0F00AF719A /* MKPhotoCollectionCell.swift */,
 				1957341F21980C0F00AF719A /* MKPhotoCollectionCell.xib */,
 				196DDBB121A29731009E86DD /* FCFMasonryViewLayout.swift */,
+				19A5103621A50AE9003FA8FB /* FCFCoverFlowLayout.swift */,
 			);
 			path = 05CollectionDemo;
 			sourceTree = "<group>";
@@ -226,6 +242,17 @@
 				195734B92198256800AF719A /* IMG_0151.JPG */,
 			);
 			path = Photos;
+			sourceTree = "<group>";
+		};
+		19A5103821A51184003FA8FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19A5103F21A511B1003FA8FB /* CoreGraphics.framework */,
+				19A5103D21A5119F003FA8FB /* UIKit.framework */,
+				19A5103B21A51197003FA8FB /* AVFoundation.framework */,
+				19A5103921A51184003FA8FB /* QuartzCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,6 +380,7 @@
 				1957342021980C0F00AF719A /* MKPhotoCollectionCell.swift in Sources */,
 				196DDBB221A29731009E86DD /* FCFMasonryViewLayout.swift in Sources */,
 				1957341D2198043000AF719A /* RootController.swift in Sources */,
+				19A5103721A50AE9003FA8FB /* FCFCoverFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

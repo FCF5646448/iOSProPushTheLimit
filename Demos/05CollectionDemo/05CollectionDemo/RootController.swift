@@ -19,13 +19,17 @@ class RootController: UIViewController {
 
     lazy var collection:UICollectionView = {
         
-        let flowLayout = UICollectionViewFlowLayout()
-        flowLayout.scrollDirection = .vertical
-//        flowLayout.itemSize = CGSize(width: 128, height: 128)
+//        let flowLayout = UICollectionViewFlowLayout()
+//        flowLayout.scrollDirection = .vertical
+        
+        
+//        let flowLayout = FCFMasonryViewLayout()
+//        flowLayout.delegate = self
+        
+        let flowLayout = FCFCoverFlowLayout()
         
         //flowLayout 一定要放在初始化方法中，否则会报错。
         let collectionview = UICollectionView(frame: self.view.bounds, collectionViewLayout: flowLayout)
-//        collectionview.layer.contents = UIImage(named: "DSC00705.JPG")?.cgImage
         collectionview.backgroundColor = UIColor.white
         collectionview.register(UINib.init(nibName: "MKPhotoCollectionCell", bundle: nil), forCellWithReuseIdentifier: "MKPhotoCollectionCell")
         collectionview.delegate = self
@@ -116,5 +120,12 @@ extension RootController:UICollectionViewDataSource {
         }
         
         return cell
+    }
+}
+
+extension RootController:FCFMasonryViewLayoutDelegate {
+    func collectionView(collection:UICollectionView,layout:FCFMasonryViewLayout,heightForItemAtIndexPath:IndexPath)->CGFloat {
+        let randomH:CGFloat = CGFloat(100 + arc4random()%140)
+        return randomH
     }
 }
